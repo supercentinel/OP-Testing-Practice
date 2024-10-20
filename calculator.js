@@ -1,15 +1,16 @@
 class Calculator {
   add(x, y) {
-    return 0;
+    return x + y;
   }
   substract(x, y) {
-    return 0;
+    return x - y;
   }
   divide(x, y) {
-    return 0;
+    if(y === 0) { return null }
+    return x / y;
   }
   multiply(x, y) {
-    return 0;
+    return x * y;
   }
 };
 
