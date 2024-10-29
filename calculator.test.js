@@ -40,8 +40,8 @@ describe('Calculator', () => {
   });
 
   test('Calculator.multiply() returns the product of x times y', () => {
-    const x = Math.floor(Math.random() * 10);
-    const y = Math.floor(Math.random() * 10);
+    const x = Math.ceil(Math.random() * 10);
+    const y = Math.ceil(Math.random() * 10);
 
     const res = calculator.multiply(x,y);
     expect(res).toBe(x * y);
