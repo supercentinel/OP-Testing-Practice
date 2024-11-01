@@ -32,11 +32,11 @@ describe('Calculator', () => {
     expect(res).toBe(x / y);
   });
 
-  test('Calculator.divide() cannot divide by zero; returns null', () => {
+  test('Calculator.divide() cannot divide by zero; returns Infinity', () => {
     const x = Math.floor(Math.random() * 10);
 
     const res = calculator.divide(x, 0);
-    expect(res).toBe(null);
+    expect(res).toBe(Infinity);
   });
 
   test('Calculator.multiply() returns the product of x times y', () => {

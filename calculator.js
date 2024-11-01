@@ -6,7 +6,7 @@ class Calculator {
     return x - y;
   }
   divide(x, y) {
-    if(y === 0) { return null }
+    if(y === 0) { return Infinity }
     return x / y;
   }
   multiply(x, y) {

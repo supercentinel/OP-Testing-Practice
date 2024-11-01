@@ -1,13 +1,13 @@
 import { capitalize, reverseString, caesarCipher } from './strings.js'
 
-test('capitalize() exists', () => {
-  expect(capitalize()).toBeDefined();
+test('capitalize() to return a capitalized string', () => {
+  expect(capitalize('lalALAla ASasadd')).toBe('Lalalala Asasadd');
 });
 
-test('reverseString() exists', () => {
-  expect(reverseString()).toBeDefined();
+test('reverseString() returns a reversed string', () => {
+  expect(reverseString('Alomomola')).toBe('alomomolA');
 });
 
-test('caesarCipher() exists', () => {
-  expect(caesarCipher()).toBeDefined();
+test('caesarCipher() returns a encrypted string in caesar cipher', () => {
+  expect(caesarCipher('Hello, Worldz!', 3)).toBe('Khoor, Zruogc!');
 });
